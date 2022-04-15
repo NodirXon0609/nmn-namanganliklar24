@@ -46,6 +46,7 @@ img {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  transition: opacity 0.5s ease;
 }
 
 .button:hover {
@@ -92,6 +93,7 @@ img {
   margin-bottom: 10px;
   background-color: #f6f6f6;
 }
+
 .site-header-top-container {
   display: flex;
   align-items: center;
@@ -99,10 +101,12 @@ img {
 
 .site-header-logo {
   display: flex;
+  flex-shrink: 0;
   padding: 9px 6px 8px;
   margin-right: 35px;
   border-radius: 7px;
   background-color:#fff;
+  transition: opacity 0.5s ease;
 }
 
 .site-header-logo:hover {
@@ -123,7 +127,7 @@ img {
   list-style: none;
 }
 
-.currency-rates-item:not(:last-child) {
+.currency-rates-item {
   margin-right: 25px;
 }
 
@@ -185,6 +189,7 @@ img {
   font-weight: 500;
   line-height: normal;
 }
+
 .sitenav-list {
   display: flex;
   flex-wrap: wrap;
@@ -207,6 +212,7 @@ img {
   display: block;
   color: #7f7f7f;
   text-decoration: none;
+  transition: color 0.5s ease;
 }
 
 .sitenav-link:hover {
@@ -220,7 +226,17 @@ img {
 /* SITE-HEADER-BANNER */
 .site-header-banner-link {
   display: flex;
+  transition: opacity 0.4s ease;
 }
+
+.site-header-banner-link:hover {
+  opacity: 0.8;
+}
+
+.site-header-banner-link:active {
+  opacity: 0.6;
+}
+
 
 /* MAIN-CONTENT */
 .main-content {
@@ -255,16 +271,21 @@ img {
 .article-card-title {
   margin-top: 0;
   margin-bottom: 10px;
+  margin-right: 13px;
   font-size: 20px;
   font-weight: 500;
-  line-height: 26px;
-  /* line-height: 130%; */
+  line-height: 130%;
+}
+
+.article-card-title-second {
+  margin-right: 14px;
 }
 
 .article-card-link {
   display: inline-block;
   color: #000;
   text-decoration: none;
+  transition: color 0.5s ease;
 }
 
 .article-card-link:hover {
@@ -313,6 +334,7 @@ img {
 
 /* NOTIFICATION-CTA */
 .notification-cta {
+  background-image: url("../img/notification.png");
   display:flex;
   justify-content: space-between;
   align-items: center;
@@ -339,11 +361,13 @@ img {
   line-height: normal;
   color:#000;
 }
+
 .news-list {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
 }
+
 .news-list-item:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -357,6 +381,7 @@ img {
   border-radius: 15px;
   background-color: #f6f6f6;
 }
+
 .article-card-horizontal-img {
   width: 210px;
   height: 165px;
@@ -368,6 +393,7 @@ img {
 .article-card-horizontal-content {
   flex-grow: 1;
 }
+
 .article-card-horizontal-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -380,6 +406,7 @@ img {
   display: inline-block;
   color: #000;
   text-decoration: none;
+  transition: color 0.5s ease;
 }
 
 .article-card-horizontal-link:hover {
@@ -398,10 +425,12 @@ img {
   font-weight: 400;
   color: #4a4b4c;
 }
+
 .article-card-horizontal-footer {
   display: flex;
   align-items: center;
 }
+
 .article-card-horizontal-source-icon {
   width: 20px;
   height: 20px;
@@ -409,6 +438,7 @@ img {
   border-radius: 5px;
   object-fit: cover;
 }
+
 .article-card-horizontal-source-time {
   font-size: 12px;
   line-height: normal;
@@ -447,6 +477,7 @@ img {
   background-color: #f6f6f6;
   color:#000;
 }
+
 .sidebar-news-card-heading {
   margin-top: 0;
   margin-bottom: 25px;
@@ -454,11 +485,13 @@ img {
   font-weight: 500;
   line-height: 28px;
 }
+
 .sidebar-news-card-list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
+
 .sidebar-news-card-item {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -483,11 +516,14 @@ img {
   font-weight: 500;
   line-height: 133%;
 }
+
 .sidebar-news-card-link {
   display: inline-block;
   color: #000;
   text-decoration: none;
+  transition: color 0.5s ease;
 }
+
 .sidebar-news-card-link:hover {
   color: #7296ec;
 }
@@ -508,7 +544,20 @@ img {
   display: flex;
 }
 
+.sidebar-ad-link {
+  transition: opacity 0.5s ease;
+}
+
+.sidebar-ad-link:hover {
+  opacity: 0.8;
+}
+
+.sidebar-ad-link:active {
+  opacity: 0.6;
+}
+
 .sidebar-ad-img {
+  display: flex;
   width: 393px;
   height: 338px;
   object-fit: cover;
@@ -544,6 +593,7 @@ img {
 
 .site-footer-logo {
   display: flex;
+  transition: opacity 0.5s ease;
 }
 
 .site-footer-logo:hover {
@@ -599,6 +649,10 @@ img {
   text-decoration: underline;
 }
 
+.site-footer-link:active {
+  opacity: 0.6;
+}
+
 .site-footer-divider {
   height: 1px;
   border: 0;
@@ -635,6 +689,15 @@ img {
 
 .site-footer-socials-link {
   display: flex;
+  transition: opacity 0.5s ease;
+}
+
+.site-footer-socials-link:hover {
+  opacity: 0.7;
+}
+
+.site-footer-socials-link:active {
+  opacity: 0.5;
 }
 
 .site-footer-socials-icon {
@@ -642,4 +705,19 @@ img {
   width: 25px;
   height: 25px;
   object-fit: contain;
+}
+
+
+/* RETINA BACKGROUND */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .site-header {
+    background-image: url("../img/notification@2x.png");
+  }
 }
