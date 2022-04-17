@@ -377,7 +377,7 @@ img {
 .article-card-horizontal {
   display: flex;
   align-items: flex-start;
-  padding: 20px;
+  padding: 20px 20px 20px 17px;
   border-radius: 15px;
   background-color: #f6f6f6;
 }
@@ -472,7 +472,7 @@ img {
 
 /* SIDEBAR-NEWS-CARD */
 .sidebar-news-card {
-  padding: 20px;
+  padding: 20px 20px 20px 17px;
   border-radius: 15px;
   background-color: #f6f6f6;
   color:#000;
@@ -562,6 +562,10 @@ img {
   height: 338px;
   object-fit: cover;
   border-radius: 15px;
+}
+
+.sidebar-ad-img-tall {
+  height: 553px;
 }
 
 
